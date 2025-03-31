@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rsas",
+  "info": {
+    "singularName": "rsa",
+    "pluralName": "rsas",
+    "displayName": "RSA"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "email"
+    },
+    "Number": {
+      "type": "string"
+    },
+    "booleanValue": {
+      "type": "boolean"
+    }
+  }
+}
