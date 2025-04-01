@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "webinars",
+  "info": {
+    "singularName": "webinar",
+    "pluralName": "webinars",
+    "displayName": "Webinar"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "number": {
+      "type": "string"
+    },
+    "booleanValue": {
+      "type": "boolean"
+    },
+    "webinarDate": {
+      "type": "string"
+    }
+  }
+}
