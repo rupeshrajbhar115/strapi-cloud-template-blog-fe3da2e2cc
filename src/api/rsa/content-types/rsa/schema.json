@@ -4,7 +4,8 @@
   "info": {
     "singularName": "rsa",
     "pluralName": "rsas",
-    "displayName": "RSA"
+    "displayName": "RSA",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -21,6 +22,9 @@
     },
     "booleanValue": {
       "type": "boolean"
+    },
+    "city": {
+      "type": "string"
     }
   }
 }

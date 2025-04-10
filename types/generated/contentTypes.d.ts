@@ -537,6 +537,7 @@ export interface ApiGlobalGlobal extends Struct.SingleTypeSchema {
 export interface ApiRsaRsa extends Struct.CollectionTypeSchema {
   collectionName: 'rsas';
   info: {
+    description: '';
     displayName: 'RSA';
     pluralName: 'rsas';
     singularName: 'rsa';
@@ -546,6 +547,7 @@ export interface ApiRsaRsa extends Struct.CollectionTypeSchema {
   };
   attributes: {
     booleanValue: Schema.Attribute.Boolean;
+    city: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
