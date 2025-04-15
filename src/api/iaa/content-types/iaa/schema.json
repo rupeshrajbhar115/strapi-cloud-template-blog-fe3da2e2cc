@@ -1,0 +1,17 @@
+{
+  "kind": "collectionType",
+  "collectionName": "iaas",
+  "info": {
+    "singularName": "iaa",
+    "pluralName": "iaas",
+    "displayName": "IAA"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}
