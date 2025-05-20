@@ -4,14 +4,24 @@
   "info": {
     "singularName": "iaa",
     "pluralName": "iaas",
-    "displayName": "IAA"
+    "displayName": "IAA",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "attributes": {
-    "name": {
+    "Name": {
       "type": "string"
+    },
+    "Email": {
+      "type": "email"
+    },
+    "Number": {
+      "type": "string"
+    },
+    "booleanValue": {
+      "type": "boolean"
     }
   }
 }

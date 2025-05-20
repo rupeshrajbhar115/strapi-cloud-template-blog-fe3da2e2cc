@@ -537,6 +537,7 @@ export interface ApiGlobalGlobal extends Struct.SingleTypeSchema {
 export interface ApiIaaIaa extends Struct.CollectionTypeSchema {
   collectionName: 'iaas';
   info: {
+    description: '';
     displayName: 'IAA';
     pluralName: 'iaas';
     singularName: 'iaa';
@@ -545,13 +546,16 @@ export interface ApiIaaIaa extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    booleanValue: Schema.Attribute.Boolean;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    Email: Schema.Attribute.Email;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::iaa.iaa'> &
       Schema.Attribute.Private;
-    name: Schema.Attribute.String;
+    Name: Schema.Attribute.String;
+    Number: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
